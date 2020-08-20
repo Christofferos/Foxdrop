@@ -2,7 +2,7 @@
 
 Link to website:
 
-- foxdrop.me
+- <a href="foxdrop.me">foxdrop.me</a>
 
 ## Content
 
