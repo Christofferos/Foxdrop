@@ -121,8 +121,8 @@ function matchWords() {
     var newString = currentWord.innerHTML.replace(/span>  /gi, "span>  £");
     let wordArray = newString.split("£");
     // Game finished! When last word is typed.
-    if (wordIndex === wordArray.length ) { // - 1
-      endGame(); 
+    if (wordIndex === wordArray.length) {
+      endGame();
       return true;
     }
     wordArray = wordArray[wordIndex].split(" ");

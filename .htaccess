@@ -1,3 +1,19 @@
-AddType application/x-httpd-php php php4 php3 html htm
 
-ErrorDocument 404 "<style> body { background: url('images/forest.jpg') no-repeat 50% 50%; } .btn { font-size: 150%; font-family:'Poppins', sans-serif;text-decoration: none; color: #098fa8; } .btn:hover { color: #156377; border: 2px solid #156377; }</style> <br><br><h1 style='text-align:center'> Oops!<br> 404, that's an error code.<br>Cause: Deadlinks or mistyped URL.<br><br>Return to Foxdrop:<br><a class='btn' href='./' style='text-decoration:none'>Home</h1>"
+# HTID:14121409: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:14121409:
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW UPGRADE_INSECURE_REQUESTS:foxdrop.me
+Header always set Content-Security-Policy: upgrade-insecure-requests
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW UPGRADE_INSECURE_REQUESTS:foxdrop.me
+
+
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:foxdrop.me
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} (www\.)?foxdrop.me
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:foxdrop.me
