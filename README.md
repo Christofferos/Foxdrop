@@ -3,6 +3,8 @@
 Link to website:
 
 - <a href="https://foxdrop.me">foxdrop.me</a>
+- <a href="https://foxdrop.000webhostapp.com/">foxdrop.me</a>
+- <a href="https://www.youtube.com/watch?v=oEBgP6LzQ5c">Preview on Youtube</a>
 
 ## Content
 
